@@ -1,0 +1,18 @@
+.league{
+    background-color: rgb(161, 235, 245);
+    margin-top: 2%;
+}
+.team{
+    padding-left: 20%;
+    padding-top: 10%;
+    width: 200px;
+    height: 200px;
+}
+.card{
+    margin-top: 10%;
+    height: 380px;
+}
+.leagueCard{
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,229,114,0.9223039557619923) 35%, rgba(0,212,255,1) 100%);
+}
