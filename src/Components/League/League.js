@@ -7,7 +7,7 @@ import { useHistory } from 'react-router';
 import './League.css';
 
 const League = (props) => {
-    const { idTeam, strTeamBadge, strAlternate, strStadium } = props.league;
+    const { idTeam, strTeamBadge, strAlternate, strStadium, strSport } = props.league;
 
     const history = useHistory();
     const showDetails = idTeam => {
@@ -20,6 +20,7 @@ const League = (props) => {
                 <Card.Img variant="top" className="rounded logo" src={strTeamBadge} />
                 <Card.Body className="text-center">
                     <Card.Title>{strAlternate}</Card.Title>
+                    <Card.Text>Sports Type : {strSport}</Card.Text>
                     <Card.Text>Venue : {strStadium}</Card.Text>
                     <Button variant="primary" onClick={() => showDetails(idTeam)}> Explore  <FontAwesomeIcon icon={faArrowRight} /></Button>
                 </Card.Body>

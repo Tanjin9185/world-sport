@@ -20,7 +20,7 @@ const LeagueDetails = () => {
             .then(res => res.json())
             .then(data => setDetails(data.teams[0]))
     }, [idTeam])
-    const { strStadium, strCountry, strSport, strGender, strDescriptionEN, strFacebook, strTwitter } = details;
+    const { strStadium, strCountry, strSport, strGender, strDescriptionEN, strFacebook, strTwitter, strWebsite } = details;
     return (
         <div className="container">
             <div >
@@ -50,9 +50,9 @@ const LeagueDetails = () => {
 
                 </div>
                 <div className='icon'>
-                    <a className='socialIcon' style={{ backgroundColor: '#00A2F3' }} href={strTwitter}><FontAwesomeIcon icon={faTwitter} /></a>
-                    <a className='socialIcon' style={{ backgroundColor: '#14A0F9' }} href={strFacebook}><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a className='socialIcon' style={{ backgroundColor: '#FF0000' }} href="https://www.youtube.com/user/jhankarmahbub"><FontAwesomeIcon icon={faYoutube} /></a>
+                    <a className='socialIcon' style={{ backgroundColor: '#00A2F3' }} href={'https://'+strTwitter} target='blank'><FontAwesomeIcon icon={faTwitter} /></a>
+                    <a className='socialIcon' style={{ backgroundColor: '#14A0F9' }} href={'https://'+strFacebook} target='blank'><FontAwesomeIcon icon={faFacebook} /></a>
+                    <a className='socialIcon' style={{ backgroundColor: '#FF0000' }} href={'https://'+strWebsite} target='blank'><FontAwesomeIcon icon={faYoutube} /></a>
 
                 </div>
             </div>
