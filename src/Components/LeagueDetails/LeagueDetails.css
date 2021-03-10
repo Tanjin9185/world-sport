@@ -8,24 +8,24 @@ body{
 }
 .playerDetails{
     display: flex;
-    background-color: rgb(25, 153, 153);
+    background-color: rgba(222, 17, 230, 0.904);
     
-    
+}
+.singlePlayer{
+    background-color: rgb(19, 33, 233);
+    border-radius: 3%;
 }
 .playerImage{
     height: 200px;
     max-width: 100%;
-    /* padding-top: 10px; */
-    
 }
-.logo{
+.icon{
     text-align: center;
 }
 .socialIcon{
     height: 30px;
     width: 30px;
     display: inline-block;
-    /* background-color: rgb(197, 171, 221); */
     color: white;
     line-height: 30px;
     margin: 0 15px;

@@ -1,18 +1,23 @@
 .league{
     background-color: rgb(161, 235, 245);
-    margin-top: 2%;
+    padding-top: 15px;
+    /* margin-top: 1%; */
+    
 }
-.team{
-    padding-left: 20%;
-    padding-top: 10%;
-    width: 200px;
-    height: 200px;
+.logo{ 
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 5%;
+    /* text-align: center; */
 }
 .card{
-    margin-top: 10%;
-    height: 380px;
+    margin-top: 5%;
+    height: 300px;
 }
 .leagueCard{
     border-radius: 10px;
+    margin: 0 auto;
+    /* text-align: center; */
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,229,114,0.9223039557619923) 35%, rgba(0,212,255,1) 100%);
 }
