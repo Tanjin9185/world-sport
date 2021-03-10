@@ -26,9 +26,9 @@ function App() {
           <Route path="/league/:idTeam">
             <LeagueDetails></LeagueDetails>
           </Route>
-          {/* <Route path="*">
+          <Route path="*">
             <NotFound />
-          </Route> */}
+          </Route>
         </Switch>
       </Router>
 

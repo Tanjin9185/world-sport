@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Image } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import './LeagueDetails.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
